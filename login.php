@@ -4,8 +4,8 @@ session_start();  // Start a session to track login state
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get the submitted username and password
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = $_POST['linuks'];
+    $password = $_POST['123456'];
     
     // Create a database connection
     $conn = new mysqli('localhost', 'linuks', '123456', database: 'profile_db'); // Update with your DB credentials
