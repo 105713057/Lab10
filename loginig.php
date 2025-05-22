@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // SQL query to select the user record with matching username and password
-    $sql = "SELECT * FROM user WHERE username='denura' AND password='123456'";
+    $sql = "SELECT * FROM user WHERE username='linuks' AND password='123456'";
     
     // Execute the query
     $result = $conn->query($sql);
