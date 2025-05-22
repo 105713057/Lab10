@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch the user data from the database based on the username stored in the session
-$sql = "SELECT * FROM user WHERE username='denura'";
+$sql = "SELECT * FROM user WHERE username='linuks'";
 $result = $conn->query($sql);
 
 // Check if the user exists in the database
