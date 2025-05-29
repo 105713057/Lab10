@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
     
     // Create a database connection
-    $conn = new mysqli('localhost', 'linuks', '123456', 'profile_db'); // Update with your DB credentials
+    $conn = new mysqli('localhost', 'root', '', 'user'); // Update with your DB credentials
     
     // Check the connection
     if ($conn->connect_error) {
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // SQL query to select the user record with matching username and password
-    $sql = "SELECT * FROM user WHERE username='Linuka' AND password='123456'";
+    $sql = "SELECT * FROM user WHERE username='Kavindu' AND password='104830696'";
     
     // Execute the query
     $result = $conn->query($sql);
