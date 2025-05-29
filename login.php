@@ -4,11 +4,11 @@ session_start();  // Start a session to track login state
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Get the submitted username and password
-    $username = $_POST['linuks'];
-    $password = $_POST['123456'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
     
     // Create a database connection
-    $conn = new mysqli('localhost', 'linuks', '123456', database: 'profile_db'); // Update with your DB credentials
+    $conn = new mysqli('localhost', 'root', '', 'user'); // Update with your DB credentials
     
     // Check the connection
     if ($conn->connect_error) {
@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // SQL query to select the user record with matching username and password
-    $sql = "SELECT * FROM user WHERE username='linuks' AND password='123456'";
+    $sql = "SELECT * FROM user WHERE username='Linuka' AND password='123456'";
     
     // Execute the query
     $result = $conn->query($sql);
